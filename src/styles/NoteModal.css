@@ -1,0 +1,133 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  
+}
+
+.modal {
+  background: rgba(18, 220, 52, 0.704);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  width: 80%;
+  max-width: 600px;
+  padding: 0.2em;
+  color: #ffffff;
+}
+
+.modal h2 {
+  margin: 0;
+  font-size: 1.5em;
+  color: white;
+}
+
+.modal textarea {
+  width: 100%;
+  height: 200px;
+  margin-top: 1em;
+  padding: 0.2em;
+  border: none;
+  border-radius: 12px;
+  background: rgba(227, 221, 221, 0.2);
+  color: #e9cbcb;
+  font-family: 'Arial', sans-serif;
+  resize: none;
+}
+
+.modal textarea:focus {
+  outline: none;
+  box-shadow: 0 4px 8px rgba(31, 38, 135, 0.5);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+
+button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.save-btn {
+  background: linear-gradient(45deg, #5cb85c, #4cae4c);
+  color: white;
+}
+
+.save-btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #4cae4c, #3d8b3d);
+}
+
+.close-btn {
+  background: linear-gradient(45deg, #d9534f, #c9302c);
+  color: rgb(33, 4, 4);
+}
+
+.close-btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(45deg, #c9302c, #a11d1a);
+}
+.modal-content{
+  background-color: #3194aa;
+  padding: 0px;
+  background: linear-gradient(to bottom right, #073233, #050211);
+  
+}
+.inputs{
+  width: 90%;
+  margin-left: 27px;
+}
+.button{
+  width: 20%;
+  padding: 1em;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(90deg, #06e9f1, #e8eaeb);
+  color: rgb(20, 1, 1);
+  transition: background-color 0.5s ease, transform 0.5s ease-out;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-size:large ;
+}
+.button:hover {
+  background: linear-gradient(45deg, #edeff1, #000a13);
+  transform: scale(1.05);
+  color: rgb(244, 239, 239);
+}
+.button-cancle{
+  width: 20%;
+  padding: 1em;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(90deg, #06e9f1, #e8eaeb);
+  color: rgb(16, 1, 1);
+  transition: background-color 0.5s ease, transform 0.5s ease-out;
+  margin-left: 335px;
+  margin-right: 20px;
+  font-size:large ;
+
+}
+.button-cancle:hover {
+  background: linear-gradient(45deg, #edeff1, #000a13);
+  transform: scale(1.05);
+  color: rgb(244, 239, 239);
+}

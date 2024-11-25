@@ -1,0 +1,77 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #011108, #1d0c58);
+  color: white;
+  font-family: 'Rubik', sans-serif;
+  
+}
+
+header {
+  padding: 1em 0;
+  width: 100%;
+  text-align: center;
+  background: rgba(240, 246, 237, 0.1);
+  box-shadow: 0 4px 12px rgb(234, 241, 237);
+  border-bottom: 1px solid hsl(0, 46%, 35%);
+  backdrop-filter: blur(10px);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 5em;
+  color: #f5f7f493;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: 'Rubik', sans-serif;
+  
+}
+
+.main-content {
+  display: flex;
+  margin-top: 1em;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.sidebar {
+  flex: 1;
+  padding: 1em;
+}
+
+.add-note-btn {
+  width: 100%;
+  padding: 1em;
+  border: none;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(45deg, #010913, #08396b);
+  color: white;
+  transition: background-color 0.5s ease, transform 0.5s ease-out;
+}
+
+.add-note-btn:hover {
+  background: linear-gradient(45deg, #0056b3, #0579df);
+  transform: scale(1.05);
+}
+
+.content {
+  flex: 3;
+  padding: 0em;
+}
+
+footer {
+  margin-top: auto;
+  padding: 1em;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 0.9em;
+  width: fit-content;
+}
+
+footer p {
+  margin: 0;
+}

@@ -1,0 +1,75 @@
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+}
+
+.note {
+  background: rgba(237, 231, 231, 0.15);
+  border: 1px solid rgba(10, 212, 91, 0.2);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(7, 14, 0, 0.37);
+  backdrop-filter: blur(10px);
+  padding: 2em;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.note:hover {
+  transform: scale(1.05);
+  box-shadow: 0 24px 48px rgba(238, 239, 246, 0.5);
+  background: transparent;
+}
+
+.note h3 {
+  margin: 0;
+  font-size: 1.3em;
+  color: #fff;
+}
+
+.note .tagline {
+  color: #d1d1d1;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.note p {
+  color: #eaeaea;
+  margin-top: 10px;
+}
+
+.note-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+button {
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.pin-btn {
+  background: linear-gradient(45deg, #5cb85c, #4cae4c);
+  color: white;
+}
+
+.pin-btn:hover {
+  background: linear-gradient(45deg, #4cae4c, #3d8b3d);
+  transform: scale(1.1);
+}
+
+.delete-btn {
+  background: linear-gradient(45deg, #d9534f, #c9302c);
+  color: white;
+}
+
+.delete-btn:hover {
+  background: linear-gradient(45deg, #c9302c, #a11d1a);
+  transform: scale(1.1);
+}
